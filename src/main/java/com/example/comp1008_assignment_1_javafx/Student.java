@@ -2,6 +2,8 @@ package com.example.comp1008_assignment_1_javafx;
 
 import java.awt.*;
 import java.util.ArrayList;
+import javafx.scene.image.Image;
+
 
 public class Student {
     private String firstName, lastName;
@@ -15,6 +17,8 @@ public class Student {
         setLastName(lastName);
         setStudentNumber(studentNumber);
         setFavouriteActivities(favouriteActivities);
+        String fileName = String.format("images/%s_%d.png", firstName,studentNumber);
+        studentImage = new Image(getClass().getResource(fileName).toExternalForm());
 
     }
 
