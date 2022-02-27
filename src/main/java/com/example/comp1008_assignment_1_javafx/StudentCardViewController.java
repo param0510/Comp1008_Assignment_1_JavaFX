@@ -30,6 +30,11 @@ public class StudentCardViewController implements Initializable {
 
     private Student student;
 
+    /**
+     * The initialize method creates the student object and updates the view according to its contents.
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         student = new Student("paramveer","singh", 200491057,new ArrayList<>(Arrays.asList("boxing", "painting", "singing")));
